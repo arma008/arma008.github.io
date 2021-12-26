@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-image: url("background.png");
+    background-size: 100%;
+    background-repeat: repeat-y;
+    overflow-x: hidden;
+}
+
+.banner {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner h1 {
+    position: absolute;
+    top: 45%;
+    left: 26.5%;
+}
+
+.top-nav {
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    padding: 10px 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #1f1f1f;
+}
+
+.top-nav[data-visible="true"] {
+    transform: translateX(0%);
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+.top-nav .menu {
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-height: 0;
+}
+
+.top-nav .menu li a {
+    display: inline-block;
+    min-width: 75px;
+    margin: 0.3em 0;
+    padding: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white
+}
+
+.top-nav .menu li a:hover {
+    color: #20232d;
+    font-weight: bold;
+    color: whitesmoke
+}
+
+.logo img {
+    display: inline-block;
+    width: 30px;
+}
+
+.top-nav .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+}
+
+.top-nav .menu-icon .navicon {
+    background: #20232d;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 1.625rem;
+}
+
+.top-nav li {
+    margin: 0 10px;
+}
+
+.top-nav .menu {
+    width: auto;
+    max-height: none;
+    flex-direction: row;
+}
+
+.top-nav .menu-icon {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: white
+}
+
+p {
+    font-size: 21px;
+}
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 645px) {
+    .top-nav {
+        position: fixed;
+        inset: 0 0 0 30%;
+        z-index: 1000;
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2em;
+        background: hsl(0 0% 0% / 0.85);
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    @supports (backdrop-filter: blur(0.5rem)) {
+        .top-nav {
+            background: hsl(0 0% 100% / 0.1);
+            backdrop-filter: blur(0.75rem);
+        }
+    }
+
+    .top-nav .menu {
+        flex-direction: column;
+    }
+
+    .logo img {
+        min-width: 100px;
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        position: fixed;
+        z-index: 9999;
+        background: url("hamburger-icon.png");
+        background-repeat: no-repeat;
+        border: 0;
+        width: 1.8rem;
+        aspect-ratio: 1;
+        top: 1.8rem;
+        right: 1.8rem;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url("hamburger-close.png");
+    }
+
+    .banner h1 {
+        font-size: 16px;
+    }
+}
