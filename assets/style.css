@@ -15,6 +15,10 @@ body {
     margin: 0 auto;
 }
 
+.lastNav {
+    padding-right: 20px;
+}
+
 .banner img {
     width: 100%;
 }
@@ -23,6 +27,8 @@ body {
     position: absolute;
     top: 45%;
     left: 26.5%;
+    font-size: 15px;
+    font-size: 44px;
 }
 
 .top-nav {
@@ -114,16 +120,36 @@ p {
     color: white
 }
 
-p {
-    font-size: 21px;
-}
-
 *,
 html {
     margin: 0;
     padding: 0;
     font-size: 16px;
     scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 1800px) {
+    .banner h1 {
+        font-size: 65px;
+    }
+
+    .top-nav {
+        padding: 30px 30px 15px;
+    }
+
+    .top-nav .menu li a {
+        font-size: 30px;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner h1 {
+        font-size: 33px;
+    }
 }
 
 @media screen and (max-width: 645px) {
@@ -170,6 +196,24 @@ html {
         background-image: url("hamburger-close.png");
     }
 
+    .banner h1 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 553px) {
+    .banner h1 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .banner h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
     .banner h1 {
         font-size: 16px;
     }
