@@ -1,563 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/83a94c8100.js" crossorigin="anonymous"></script>
+    <title>Arma | Web Developer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="main-content">
-    <header class="container header active" id="home">
-        <div class="header-content">
-            <div class="left-header">
-                <div class="h-shape"></div>
-                <div class="image">
-                    <img src="img/hero.png" alt="">
-                </div>
-            </div>
-            <div class="right-header">
-                <h1 class="name">
-                    Hi, I'm <span>Solano Milan Diaz.</span>
-                    A Web Developer.
-                </h1>
-                <p>
-                    I'm a Web Developer, I love to create beautiful and functional websites.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, libero?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque blanditiis sed aut!
-                </p>
-                <div class="btn-con">
-                    <a href="" class="main-btn">
-                        <span class="btn-text">Download CV</span>
-                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+    <!-- navbar -->
+    <nav id="navbar">
+        <div id="banner">
+            <a href="refresh.html">
+                <img class="banneratt" id="logo" src="assets/images/fatui.png">
+                <h4 class="banneratt"><a href="#home">Alvin Reihansyah Makarim</h4>
+            </a>
+            <p class="banneratt tagline">Software developer</p>
+        </div>
+        <!-- ul dibawah harusnya ditambah class="controlls" -->
+        <ul class="controlls" id="links"> 
+            <li class="control control1" data-id="blog"><a href="#blog">Blog</a></li>
+            <div class = "vertical"></div>
+            <li class="control control2" data-id="projects"><a href="#projects">Projects</a></li>
+            <div class = "vertical"></div>
+            <li class="control control3" data-id="resume"><a href="#resume">Resume</a></li>
+            <div class = "vertical"></div>
+            <li class="control control4 active-btn" data-id="home"><a href="#home">Home</a></li>
+        </ul>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- main -->
+    <!-- Home -->
+    <header id="home" class="section sec1 header active">
+        <p>&nbsp</p>
+        <div class="greeting-box">
+                <h1 class="greeting-title">Hi, I'm Alvin.<br>I'm still learning about this computer and all digital shit. So please, have a seat and watch me grow.</h1>
+        </div>
+        <div class="desc-box">
+            <img class="desc-img" src="assets/images/1630050612521.jfif">
+            <p class="desc-text">
+                My passion for building digital products is shaped by having the mindset of putting humans in the center of attention; to ensure the product team is solving the right problem for the people.
+                <br><br>My design process is backed-up with the iterative approach of user research, problem definition, hypotheses creations, prototyping, and testing.
+                <br><br>My strong focus is on discovery research and building design concepts that will enable organizations in defining a new strategy or product opportunities to help the business gain its competitive advantage.
+                <!-- My love of computers has brought me to this point. Even though the world of programming is always evolving at a very fast pace,
+                I'm still trying to catch up. Later, I will always update this website as a sign of my ability in the field that I am engaged in.
+                And if fate says otherwise, this website will provide digital memories and prove that I was able to get to this stage.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+        </div>  
+    </header>
+    <!-- Home end -->
+    <main>
+        <section id="resume" class="section sec2 resume">a</section>
+        
+        <section id="projects" class="section sec3 projects">b</section>
+        
+        <!-- Blog -->
+        <section id="blog" class="section sec4 blog">
+            <section class="cards-wrapper">
+                <div class="card-grid-space">
+                    <a class="card" href="https://alvinreihans.wordpress.com/2022/04/28/class-diagram/" style="--bg-img: url(https://www.researchgate.net/profile/Robert-France-2/publication/220868351/figure/fig1/AS:671528823820294@1537116356318/A-UML-Class-Diagram-for-a-video-poker-game.png)">
+                        <div>
+                            <h1>Class Diagram</h1>
+                            <p>Apa itu class diagram?
+                                Class diagram adalah salah satu tipe diagram struktur dari…</p>
+                            <div class="date">April 28, 2022</div>
+                            <div class="tags">
+                                <div class="tag">Rekayasa Perangkat Lunak</div>
+                            </div>
+                        </div>
                     </a>
                 </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="container about" id="about">
-            <div class="main-title">
-                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
-            </div>
-            <div class="about-container">
-                <div class="left-about">
-                    <h4>Information About me</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Eveniet labore nihil obcaecati consequatur. Debitis error doloremque, 
-                        vero eos vel nemo eius voluptatem dicta tenetur modi. <br /> <br /> La musica
-                        delectus dolore fugiat exercitationem a, 
-                        ipsum quidem quo enim natus accusamus labore dolores nam. Unde.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Harum non necessitatibus deleniti eum soluta.
-                    </p>
-                    <div class="btn-con">
-                        <a href="#" class="main-btn">
-                            <span class="btn-text">Download CV</span>
-                            <span class="btn-icon"><i class="fas fa-download"></i></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="right-about">
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">650+</p>
-                            <p class="small-text">Projects <br /> Completed</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">10+</p>
-                            <p class="small-text">Years of <br /> experience</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">300+</p>
-                            <p class="small-text">Happy <br /> Clients</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">400+</p>
-                            <p class="small-text">Customer <br /> reviews</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="about-stats">
-                <h4 class="stat-title">My Skills</h4>
-                <div class="progress-bars">
-                    <div class="progress-bar">
-                        <p class="prog-title">html5</p>
-                        <div class="progress-con">
-                            <p class="prog-text">80%</p>
-                            <div class="progress">
-                                <span class="html"></span>
+                <div class="card-grid-space">
+                    <a class="card" href="https://alvinreihans.wordpress.com/2022/04/28/masalah-tata-kelola-sampah-di-lingkungan-propinsi-lampung/" style="--bg-img: url(https://netizenku.com/assets/uploads/2019/09/IMG-20190923-WA0001.jpg)">
+                        <div>
+                            <h1>Masalah Tata Kelola Sampah di Lingkungan Propinsi Lampung</h1>
+                            <p>Di propinsi Lampung, pengelolaan sampah dapat dikatakan…</p>
+                            <div class="date">April 28, 2022</div>
+                            <div class="tags">
+                                <div class="tag">Pengetahuan Lingkungan</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">css3</p>
-                        <div class="progress-con">
-                            <p class="prog-text">95%</p>
-                            <div class="progress">
-                                <span class="css"></span>
+                    </a>
+                </div>
+                <div class="card-grid-space">
+                    <a class="card" href="https://alvinreihans.wordpress.com/2022/04/28/communicating-digital-content/" style="--bg-img: url(http://web.if.unila.ac.id/snazizah/wp-content/uploads/sites/424/2021/11/digital-communication-design-vector-5885891-2-300x297.jpg)">
+                        <div>
+                            <h1>Communicating Digital Content</h1>
+                            <p>Komunikasi digital mendeskripsikan sebuah proses ketika dua atau lebih komputer…</p>
+                            <div class="date">April 28, 2022</div>
+                            <div class="tags">
+                                <div class="tag">Teknologi Informasi</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">javascript</p>
-                        <div class="progress-con">
-                            <p class="prog-text">75%</p>
-                            <div class="progress">
-                                <span class="js"></span>
+                    </a>
+                </div>
+                <div class="card-grid-space">
+                    <a class="card" href="https://alvinreihans.wordpress.com/2022/04/28/iot-for-agriculture/" style="--bg-img: url(https://www.arcweb.com/sites/default/files/Images/blog-images-2/IoT%20in%20Smart%20Farming.png)">
+                        <div>
+                            <h1>IoT for Agriculture</h1>
+                            <p>Penggunaan IoT bisa mewujudkan pertanian presisi (precision farming) dan irigasi pintar. Artinya,…</p>
+                            <div class="date">April 28, 2022</div>
+                            <div class="tags">
+                                <div class="tag">Industri Pertanian</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">ReactJS</p>
-                        <div class="progress-con">
-                            <p class="prog-text">75%</p>
-                            <div class="progress">
-                                <span class="react"></span>
+                    </a>
+                </div>
+                <div class="card-grid-space">
+                    <a class="card" href="https://alvinreihans.wordpress.com/2022/04/28/blockchain-for-agriculture/" style="--bg-img: url(https://www.godan.info/sites/default/files/styles/large/public/blog-images/blockchain-3019120_1920.png?itok=oSUGcC18)">
+                        <div>
+                            <h1>Blockchain for Agriculture</h1>
+                            <p>Di sektor pertanian, blockchain dapat digunakan untuk melacak…</p>
+                            <div class="date">April 28, 2022</div>
+                            <div class="tags">
+                                <div class="tag">Industri Pertanian</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">NodeJS</p>
-                        <div class="progress-con">
-                            <p class="prog-text">87%</p>
-                            <div class="progress">
-                                <span class="node"></span>
+                    </a>
+                </div>
+                <div class="card-grid-space">
+                    <a class="card" href="https://alvinreihans.wordpress.com/2022/04/28/big-data-for-agriculture/" style="--bg-img: url(http://web.if.unila.ac.id/alvinreihans/wp-content/uploads/sites/417/2021/09/sawah-irigasi-300x180.jpg)">
+                        <div>
+                            <h1>Big Data for Agriculture</h1>
+                            <p>Teknologi dari big data yang dapat mendorong penerapan smart agriculture adalah seperti benchmarking, …</p>
+                            <div class="date">April 28, 2022</div>
+                            <div class="tags">
+                                <div class="tag">Industri Pertanian</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Python</p>
-                        <div class="progress-con">
-                            <p class="prog-text">70%</p>
-                            <div class="progress">
-                                <span class="python"></span>
+                    </a>
+                </div>
+                <div class="card-grid-space">
+                    <a class="card" href="https://alvinreihans.wordpress.com/2022/04/28/ai-for-agriculture/" style="--bg-img: url(http://web.if.unila.ac.id/alvinreihans/wp-content/uploads/sites/417/2021/09/ai-for-agriculture.jpg)">
+                        <div>
+                            <h1>AI for Agriculture</h1>
+                            <p>Di Indonesia, beberapa orang juga sudah mulai menerapkan kecerdasan buatan dalam industri pertanian. Salah satunya yang dilakukan oleh…</p>
+                            <div class="date">April 28, 2022</div>
+                            <div class="tags">
+                                <div class="tag">Industri Pertanian</div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-            </div>
-            <h4 class="stat-title">My Timeline</h4>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2010 - present</p>
-                    <h5>Web Developer<span> - Vircrosoft</span></h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-                    </p>
+                <div class="card-grid-space">
+                    <a class="card" href="https://alvinreihans.wordpress.com/2022/04/28/penerapan-teknologi-terhadap-industri-pertanian/" style="--bg-img: url(http://web.if.unila.ac.id/alvinreihans/wp-content/uploads/sites/417/2021/09/WhatsApp-Image-2021-09-03-at-22.34.54.jpeg)">
+                        <div>
+                            <h1>Penerapan Teknologi terhadap Industri Pertanian</h1>
+                            <p>Pertanian presisi merupakan sistem pertanian modern, dimana…</p>
+                            <div class="date">April 28, 2022</div>
+                            <div class="tags">
+                                <div class="tag">Industri Pertanian</div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2008 - 2011</p>
-                    <h5>Software Engineer<span> - Boogle, Inc.</span></h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2016 - 2017</p>
-                    <h5>C++ Programmer<span> - Slime Tech</span></h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2009 - 2013</p>
-                    <h5>Business Degree<span> - Sussex University</span></h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2013 - 2016</p>
-                    <h5>Computer Science Degree<span> - Brookes University</span></h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2017 - present</p>
-                    <h5>3d Animation<span> - Brighton University</span></h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-                    </p>
-                </div>
-            </div>
+            </section>
         </section>
-        <section class="container" id="portfolio">
-            <div class="main-title">
-                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
-            </div>
-            <p class="port-text">
-                Here is some of my work that I've done in various programming languages.
-            </p>
-            <div class="portfolios">
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port1.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port2.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port3.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port4.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port5.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port2.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port7.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="container" id="blogs">
-            <div class="blogs-content">
-                <div class="main-title">
-                    <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
-                </div>
-                <div class="blogs">
-                    <div class="blog">
-                        <img src="img/port6.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                How to Create Your Own Website
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog1.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                How to Become an Expert in Web Design
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog2.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Become a Web Designer in 10 Days
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog3.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Debbuging made easy with Web Inspector
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/port1.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Get started with Web Design and UI Design
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/port3.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                This is what you need to know about Web Design
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="container contact" id="contact">
-            <div class="contact-container">
-                <div class="main-title">
-                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
-                </div>
-                <div class="contact-content-con">
-                    <div class="left-contact">
-                        <h4>Contact me here</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            In, laborum numquam? Quam excepturi perspiciatis quas quasi.
-                        </p>
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Location</span>
-                                </div>
-                                <p>
-                                    : London, united Kingdom
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>Email</span>
-                                </div>
-                                <p>
-                                    <span>: maclinzuniversal@gmail.com</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Education</span>
-                                </div>
-                                <p>
-                                    <span>: Sussex University, East Sussex</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Mobile Number</span>
-                                </div>
-                                <p>
-                                    <span>: 07522670617</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-globe-africa"></i>
-                                    <span>Languages</span>
-                                </div>
-                                <p>
-                                    <span>: Afrikaans, English, Spanish</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="contact-icons">
-                            <div class="contact-icon">
-                                <a href="www.facebook.com" target="_blank">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right-contact">
-                        <form action="" class="contact-form">
-                            <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="email" required placeholder="YOUR EMAIL">
-                            </div>
-                            <div class="input-control">
-                                <input type="text" required placeholder="ENTER SUBJECT">
-                            </div>
-                            <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
-                            </div>
-                            <div class="submit-btn">
-                                <a href="#" class="main-btn">
-                                    <span class="btn-text">Download CV</span>
-                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
-                                </a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Blog End -->
     </main>
+    <!-- main end -->
 
-    <div class="controls">
-        <div class="control active-btn" data-id="home" >
-            <i class="fas fa-home"></i>
+    <!-- footer contact -->
+    <footer id="contact">
+        <h2>Feel free to contact me!</h2>
+        <div id="data-container">
+            <div class="button-container">
+                <a href="https://www.linkedin.com/in/alvinreihans/"><i class="fa-brands fa-twitter icon"></i></a>
+            <a href="https://www.linkedin.com/in/alvinreihans/"><i class="fa-brands fa-linkedin icon"></i></a>
+            <a href="https://www.instagram.com/alvinreihans_/"><i class="fa-brands fa-instagram icon"></i></a>
+            </div>
+            <form id="form-text" action="https://formsubmit.co/reihansyah6@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="Dari web porto!!">
+                <input type="text" name="name" required placeholder="Name">
+                <input type="email" name="email" required placeholder="Email">
+                <input type="tel" name="phone" placeholder="Phone">
+                <input class="massage" type="text" name="message" placeholder="Type your message here...">
+                <button type="submit">Send</button>
+            </form>
         </div>
-        <div class="control" data-id="about">
-            <i class="fas fa-user"></i>
-        </div>
-        <div class="control" data-id="portfolio">
-            <i class="fas fa-briefcase"></i>
-        </div>
-        <div class="control" data-id="blogs">
-            <i class="far fa-newspaper"></i>
-        </div>
-        <div class="control" data-id="contact">
-            <i class="fas fa-envelope-open"></i>
-        </div>
-    </div>
-    <div class="theme-btn">
-        <i class="fas fa-adjust"></i>
-    </div>
-    <script src="app.js"></script>
+    </footer>
+    <!-- footer contact end -->
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
