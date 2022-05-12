@@ -393,6 +393,10 @@ a {
 /* blog end */
 
 /* footer */
+#leftest {
+    margin-left : 0px;
+}
+
 #data-container {
     display: flex;
 }
@@ -401,8 +405,9 @@ a {
     display: flex;
 }
 .icon {
-    font-size: 32px;
+    font-size: 2.6vw;
     transition: all 0.2s ease-in-out;
+    margin: 2vw;
 }
 
 .icon:hover {
