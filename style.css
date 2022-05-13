@@ -11,6 +11,9 @@ body {
 }
 
 /* scrollbar */
+/* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
 /* total width */
 html::-webkit-scrollbar {
     background-color:#f3f3f3;
@@ -180,7 +183,7 @@ section {
 
 /* home */
 .greeting-box {
-    margin: 10% 15% 25% 15%;
+    margin: 11% 15% 12% 15%;
 }
 .greeting-title {
     font-size: 53px;
@@ -251,7 +254,6 @@ section {
             top: 29%;
             }
         }
-
         @-moz-keyframes ani-mouse {
             0% {
             opacity: 1;
@@ -270,7 +272,6 @@ section {
             top: 29%;
             }
         }
-
         @keyframes ani-mouse {
             0% {
             opacity: 1;
@@ -289,7 +290,6 @@ section {
             top: 29%;
             }
         }
-
         .scroll-btn {
             display: block;
             position: absolute;
@@ -297,7 +297,6 @@ section {
             right: 0;
             text-align: center;
         }
-
         .scroll-btn > * {
             display: inline-block;
             line-height: 10px;
@@ -308,7 +307,6 @@ section {
             font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
             letter-spacing: 2px;
         }
-
         .scroll-btn .mouse {
             position: relative;
             display: block;
@@ -321,7 +319,6 @@ section {
             border: 3px solid #babac0;
             border-radius: 23px;
         }
-
         .scroll-btn .mouse > * {
             position: absolute;
             display: block;
@@ -344,11 +341,11 @@ section {
     --color: #3c3163;
     --transition-time: 0.5s;
 }
-  
+
 a {
     color: inherit;
 }
-  
+
 .cards-wrapper {
     display: grid;
     justify-content: center;
@@ -359,9 +356,9 @@ a {
     margin: 0 auto;
     width: max-content;
 }
-  
+
 .card {
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     --bg-filter-opacity: 0.5;
     background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
     height: 12em;
@@ -382,28 +379,28 @@ a {
     border: 10px solid white;
     text-decoration: none;
 }
-  
+
 .card:hover {
     transform: rotate(0);
 }
-  
+
 .card h1 {
     margin: 0;
     font-size: 1em;
     line-height: 1em;
 }
-  
+
 .card p {
     font-size: 0.65em;
     font-family: 'Poppins', sans-serif;
     margin-top: 0.43em;
     line-height: 1.75em;
 }
-  
+
 .card .tags {
     display: flex;
 }
-  
+
 .card .tags .tag {
     font-size: 0.55em;
     background: rgba(255,255,255,0.5);
@@ -413,12 +410,12 @@ a {
     line-height: 1.5em;
     transition: all, var(--transition-time);
 }
-  
+
 .card:hover .tags .tag {
     background: var(--color);
     color: white;
 }
-  
+
 .card .date {
     position: absolute;
     top: 0;
@@ -428,7 +425,7 @@ a {
     line-height: 1em;
     opacity: .8;
 }
-  
+
 .card:before, .card:after {
     content: '';
     transform: scale(0);
@@ -441,57 +438,57 @@ a {
     transition: all, var(--transition-time);
     transition-timing-function: ease-in-out;
 }
-  
+
 .card:before {
     background: #ddd;
     width: 250%;
     height: 250%;
 }
-  
+
 .card:after {
     background: white;
     width: 200%;
     height: 200%;
 }
-  
+
 .card:hover {
     color: var(--color);
 }
-  
+
 .card:hover:before, .card:hover:after {
     transform: scale(1);
 }
-  
+
 .card-grid-space .num {
     font-size: 3em;
     margin-bottom: 1.2rem;
     margin-left: 1rem;
 }
-  
+
 .info {
     font-size: 1.2em;
     display: flex;
     padding: 1em 3em;
     height: 3em;
 }
-  
+
 .info img {
     height: 3em;
     margin-right: 0.5em;
 }
-  
+
 .info h1 {
     font-size: 1em;
     font-weight: normal;
 }
-  
+
   /* MEDIA QUERIES */
 @media screen and (max-width: 1285px) {
-  .cards-wrapper {
+    .cards-wrapper {
     grid-template-columns: 1fr 1fr;
-  }
+    }
 }
-  
+
 @media screen and (max-width: 900px) {
     .cards-wrapper {
         grid-template-columns: 1fr;
@@ -504,7 +501,7 @@ a {
         text-align: center;
     }
 }
-  
+
 @media screen and (max-width: 500px) {
     .cards-wrapper {
         padding: 4rem 2rem;
@@ -513,8 +510,8 @@ a {
         max-width: calc(100vw - 4rem);
     }
 }
-  
-  @media screen and (max-width: 450px) {
+
+@media screen and (max-width: 450px) {
     .info {
         display: block;
         text-align: center;
