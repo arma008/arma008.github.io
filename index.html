@@ -16,7 +16,6 @@
             </a>
             <p class="banneratt tagline">Software developer</p>
         </div>
-        <!-- ul dibawah harusnya ditambah class="controlls" -->
         <ul class="controlls" id="links"> 
             <li class="control control1" data-id="blog"><a href="#blog">Blog</a></li>
             <div class = "vertical"></div>
@@ -34,25 +33,53 @@
     <header id="home" class="section sec1 header active">
         <p>&nbsp</p>
         <div class="greeting-box">
-                <h1 class="greeting-title">Hi, I'm Alvin.<br>I'm still learning about this computer and all digital shit. So please, have a seat and watch me grow.</h1>
-                <div class="button-container">
-                    <a href="https://t.me/alvinreihans"><i class="fa-brands fa-telegram icon" id="leftest"></i></a>
-                    <a href="https://www.linkedin.com/in/alvinreihans/"><i class="fa-brands fa-linkedin icon"></i></a>
-                    <a href="https://github.com/arma008"><i class="fa-brands fa-github icon"></i></a>
-                    <a href="https://twitter.com/arma0008"><i class="fa-brands fa-twitter icon"></i></a>
-                    <a href="https://www.instagram.com/alvinreihans_/"><i class="fa-brands fa-instagram icon"></i></a>
-                </div>
+            <h1 class="greeting-title">Hi, I'm Alvin.<br>Please wait patiently, I'm still learning. Thanks.</h1>
+            <div class="button-container">
+                <a href="https://t.me/alvinreihans"><i class="fa-brands fa-telegram icon-header"></i></a>
+                <a href="https://www.linkedin.com/in/alvinreihans/"><i class="fa-brands fa-linkedin icon-header"></i></a>
+                <a href="https://github.com/arma008"><i class="fa-brands fa-github icon-header"></i></a>
+                <a href="https://twitter.com/arma0008"><i class="fa-brands fa-twitter icon-header"></i></a>
+                <a href="https://www.instagram.com/alvinreihans_/"><i class="fa-brands fa-instagram icon-header"></i></a>
+            </div>
+            <br>
+            <span class="scroll-btn">
+                <span class="mouse">
+                    <span></span>
+                </span>
+            </span>
         </div>
         <div class="desc-box">
             <img class="desc-img" src="assets/images/1630050612521.jfif">
             <p class="desc-text">
-                My passion for building digital products is shaped by having the mindset of putting humans in the center of attention; to ensure the product team is solving the right problem for the people.
-                <br><br>My design process is backed-up with the iterative approach of user research, problem definition, hypotheses creations, prototyping, and testing.
-                <br><br>My strong focus is on discovery research and building design concepts that will enable organizations in defining a new strategy or product opportunities to help the business gain its competitive advantage.
-                <!-- My love of computers has brought me to this point. Even though the world of programming is always evolving at a very fast pace,
-                I'm still trying to catch up. Later, I will always update this website as a sign of my ability in the field that I am engaged in.
-                And if fate says otherwise, this website will provide digital memories and prove that I was able to get to this stage.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
-        </div>  
+               My love of computers has brought me to this point. Even though the world of programming is always evolving at a very fast pace, I'm still trying to catch up.
+                <br><br>Later, I will always update this website as a sign of my ability in the field that I am engaged in. And if fate says otherwise, this website will provide digital memories and prove that I was able to get to this stage.
+                <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+        </div>
+        
+        <!-- <jobdesc> -->
+        <div class="jobdesc-container">
+            <div class="jobdesc-box">
+                <h2>What I Do</h2>
+                <br>
+                <h3>Web</h3>
+                <ul>
+                    <li>Mampu untuk membuat website sederhana menggunakan HTML, CSS, dan vanilla javascript.</li>
+                    <li>Mampu menerapkan flexbox, grid, applied visual design, applied accessibility, dan media query pada CSS untuk membuat website yang responsif.</li>
+                    <li>Mampu memanipulasi Javascript DOM.</li>
+                </ul>
+                <br>
+                <h3>C++</h3>
+                <ul>
+                    <li>Mampu membuat program dengan menerapkan function, struct, dan pointer.</li>
+                </ul>
+                <br>
+                <h3>Kotlin</h3>
+                <ul>
+                    <li>Mengerti dasar-dasar pemrograman menggunakan Kotlin.</li>
+                </ul>
+            </div>  
+        </div>
+    <!-- jobdesc end -->
     </header>
     <!-- Home end -->
     <main>
@@ -169,6 +196,8 @@
     <!-- footer contact -->
     <footer id="contact">
         <h2>Feel free to contact me!</h2>
+        <br>
+        <p>Have an interesting project for a novice web developer? Please let me know! I will be very grateful.</p>
         <div id="data-container">
             <div class="button-container">
                 <a href="https://www.linkedin.com/in/alvinreihans/"><i class="fa-brands fa-twitter icon"></i></a>
@@ -177,11 +206,11 @@
             </div>
             <form id="form-text" action="https://formsubmit.co/reihansyah6@gmail.com" method="POST">
                 <input type="hidden" name="_subject" value="Dari web porto!!">
-                <input type="text" name="name" required placeholder="Name">
-                <input type="email" name="email" required placeholder="Email">
-                <input type="tel" name="phone" placeholder="Phone">
-                <input class="massage" type="text" name="message" placeholder="Type your message here...">
-                <button type="submit">Send</button>
+                <input class="smallform" type="text" name="name" required placeholder="Name">
+                <input class="smallform" type="email" name="email" required placeholder="Email">
+                <input class="smallform" type="tel" name="phone" placeholder="Phone">
+                <input class="smallform" class="massage" type="text" name="message" placeholder="Type your message here...">
+                <button class="submit" type="submit">Send</button>
             </form>
         </div>
     </footer>
